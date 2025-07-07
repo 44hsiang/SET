@@ -1,0 +1,24 @@
+instruments:
+    keithley_A:
+        driver: qcodes.instrument_drivers.tektronix.Keithley_2600_channels 
+        type: Keithley_2600 
+        address: GPIB0::25::INSTR
+        enable_forced_reconnect: true
+        parameters:
+            smua.volt:
+                step: 0.001
+                inter_delay: 0.01
+            smub.volt:
+                step: 0.001
+                inter_delay: 0.01
+            smua.curr:
+                step: 0.001
+                inter_delay: 0.01
+            smub.curr:
+                step: 0.001
+                inter_delay: 0.01
+    dmm:
+        driver: qcodes.instrument_drivers.Keysight.Keysight_34465A_submodules
+        type: Keysight_34465A
+        address: USB0::0x2A8D::0x0101::MY60015343::INSTR
+        

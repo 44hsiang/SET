@@ -1,0 +1,7 @@
+instruments:
+    qdac:
+        type: qcodes_contrib_drivers.drivers.QDevil.QDAC2.QDac2 
+        address: TCPIP::192.168.0.198::5025::SOCKET
+
+            
+            

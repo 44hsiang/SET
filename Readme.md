@@ -15,3 +15,12 @@ https://www.baspi.ch/low-noise-high-stab-itov-conv
 Qcode:
 https://microsoft.github.io/Qcodes/index.html
 print_readable_snapshot() #useful command
+
+plottr installation
+1.	Run the following lines in the conda prompt
+- conda activate qcodes
+- pip install plottr==0.14.0
+- pip install pyqt5
+2.	Run the following command to show the plottr interface in the conda prompt
+- conda activate qcodes
+- plottr-inspectr

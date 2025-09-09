@@ -22,7 +22,7 @@ def basic_mfli_setup(mfli, V_exc, frequency, Voffset=0):
         mfli.demods[DEMOD].enable(True)
         mfli.demods[DEMOD].oscselect(OSC)
         mfli.demods[DEMOD].adcselect(0)
-        mfli.demods[DEMOD].order(3)
+        mfli.demods[DEMOD].order(5)
         mfli.demods[DEMOD].timeconstant(0.01)
         time.sleep(1)
     return mfli
